@@ -1,0 +1,45 @@
+{
+  "name": "i6i8-utils",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "/dist/index.umd.js",
+  "module": "/dist/index.es.js",
+  "types": "/dist/index.d.ts",
+  "description": "工具库",
+  "files": [
+    "dist/*"
+  ],
+  "keywords": [
+    "utils",
+    "typescript"
+  ],
+  "author": {
+    "name": "quanda li",
+    "email": "864910436@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/China-quanda/i6i8-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/China-quanda/i6i8-utils/issues",
+    "email": "864910436@qq.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepublishOnly": "npm run build && npm run test:run",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.0.3",
+    "vitest": "^2.0.5"
+  }
+}
